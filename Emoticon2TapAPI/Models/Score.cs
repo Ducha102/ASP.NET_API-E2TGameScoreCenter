@@ -14,11 +14,13 @@ namespace Emoticon2TapAPI.Models
 
         public int score  { get; set; }
 
+        public string datetime { get; set; }
         public Score() { }
-        public Score( int Id,int score, string player) {
-            this.Id = Id;
+        public Score( int score, string player, string datetime) {
+            //this.Id = Id;
             this.Player = player;
             this.score = score;
+            this.datetime = datetime;
         }
     }
 }
